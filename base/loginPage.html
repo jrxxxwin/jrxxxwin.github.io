@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xchango</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="loginPage.css">
+    <script src="loginPage.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Xchango</h2>
+        <section>
+            <a href="index.html">Home</a>
+            <a href="">Browse</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </section>
+        <a href="login" id="login">Login/Signup</a>
+    </header>
+    <main>
+        <div class="loginForm">
+            <section id="loginSide">
+                <h2>Login</h2>
+                <div>
+                    <input type="text" required>
+                    <p>Email</p>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <p>Password</p>
+                </div>
+                <section>
+                    <section>
+                        <input type="checkbox" name="" id="">
+                        <p>Remember me</p>  
+                    </section> 
+                    <a href="">Forgot Password?</a>
+                    <button>Login</button>
+                </section>
+                
+                <p>Don't have an account? <span onclick="signup()">Register</span></p>
+            </section>
+            <div class="sideInfo"></div>
+            <section id="signSide">
+                <h2>Sign Up</h2>
+                <div class="sName">
+                    <div>
+                        <input type="text" required placeholder="First name">
+                        <p>First name</p>
+                    </div>
+                    <div>
+                        <input type="text" required>
+                        <p>Last name</p>
+                    </div>
+                </div>
+                <section>
+                    <div>
+                        <input type="date" required>
+                        <p>Birthdate</p>
+                    </div>
+                    <section>
+                        <p>Gender</p>
+                        <select name="" id="">
+                            <option value="">Rather not to say</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </section>
+                </section>
+                <div>
+                    <input type="text" required>
+                    <p>Email</p>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <p>Password</p>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <p>Confirm Password </p>
+                </div>
+                <button>Signup</button>
+                <p>Already have an account? <span onclick="logins()">Login</span></p>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

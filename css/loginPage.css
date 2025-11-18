@@ -1,0 +1,213 @@
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    main {
+        height: calc(100vh - 10vh);
+        background: var(--background);
+        position: relative;
+
+        .loginForm {
+            position: absolute;
+            background-color: #2E8B57;
+            height: 70%;
+            width: 70%;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 20px;
+            display: flex;
+
+            #loginSide {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                justify-content: space-between;
+
+                h2 {
+                    align-self: center;
+                }
+                div {
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 35px;
+                        outline: none;
+                        border: none;
+                        text-indent: 15px;
+                        border-radius: 10px;
+                        background: var(--background);
+                    }
+                    p {
+                        position: absolute; 
+                        top: 7px;
+                        left: 10px;
+                        background: var(--background);
+                        transition: all .2s ease-in-out;
+                        user-select: none;
+                    }
+
+                    input:valid ~ p {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                    input:focus ~ p {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                }
+                section {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    padding: 0 10px 0 10px;
+
+                    section {
+                        display: flex;
+                        padding: 0;
+                        gap: 10px;
+                    }
+                    a { 
+                        margin-left: auto;
+                        text-decoration: none;
+                        align-self: center;
+                        color: black    ;
+                    }
+                    button {
+                        grid-area: 2 / 1 / 2 / 3;
+                        border-radius: 10px;
+                        outline: none;
+                        border: none;
+                        height: 30px;
+                        width: 100%;
+                        background: var(--secondary-color);
+                    }
+                }
+                p {
+                    align-self: center;
+                }
+            }
+            #signSide {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                display: none;
+                flex-direction: column;
+                padding: 30px 50px;
+                justify-content: space-between;
+                transition: all .5s ease-in-out;
+
+                h2 {
+                    align-self: center;
+                }
+                .sName {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+                }
+                div {
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 35px;
+                        outline: none;
+                        border: none;
+                        text-indent: 15px;
+                        border-radius: 10px;
+                        background: var(--background);
+                    }
+                    p {
+                        position: absolute; 
+                        top: 7px;
+                        left: 10px;
+                        background: var(--background);
+                        transition: all .2s ease-in-out;
+                        user-select: none;
+                    }
+
+                    input:valid ~ p {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                    input:focus ~ p {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                    input:hover + p {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                    p:hover {
+                        top: -10px;
+                        padding: 0 5px;
+                    }
+                }
+                section {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    position: relative;
+                    justify-content: end;
+
+                    div {
+                        grid-area: 1 / 1 / 2 / 3;
+
+                        input {
+                            text-indent: 10px;
+                            padding-right: 10px;
+                        }
+                        p {
+                            padding-right: 30px;
+                        }
+                        
+                    }
+                    section {
+                        background: var(--background);
+                        border-radius: 10px;
+                        display: flex;
+
+                        p {
+                            position: absolute;
+                            left: 10px;
+                        }
+                        select {
+                            margin-right: 10px;
+                            border: none;
+                            outline: none;
+                            width: 20px;
+                        }
+                    }
+                }
+                button {
+                        border-radius: 10px;
+                        outline: none;
+                        border: none;
+                        height: 30px;
+                        width: 100%;
+                        background: var(--secondary-color);
+                    }
+                p {
+                    align-self: center;
+                }
+            }
+            .sideInfo {
+                width: 50%;
+                height: 100%;
+                
+                border-radius: 20px;
+
+                background-image: url(generate_a_photo_of_two_people_bartering.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }    
+    } 
+}
