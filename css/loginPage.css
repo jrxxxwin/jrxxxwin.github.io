@@ -2,6 +2,7 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scrollbar-width: none;
+    
 
     main {
         height: calc(100vh - 10vh);
@@ -88,10 +89,17 @@ body {
                         height: 30px;
                         width: 100%;
                         background: var(--secondary-color);
+                        cursor: pointer;
                     }
                 }
                 p {
                     align-self: center;
+
+                    span {
+                        color: var(--secondary-color);
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                    }
                 }
             }
             #signSide {
@@ -196,6 +204,12 @@ body {
                     }
                 p {
                     align-self: center;
+
+                    span {
+                        color: var(--secondary-color);
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                    }
                 }
             }
             .sideInfo {
