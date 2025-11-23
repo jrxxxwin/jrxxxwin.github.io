@@ -307,7 +307,6 @@ html, body {
         }
     }
 }
-
 @keyframes fading {
     0%   { transform: translateX(-110%); }
     8%   { transform: translateX(-73%); }
