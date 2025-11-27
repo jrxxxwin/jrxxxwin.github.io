@@ -1,0 +1,39 @@
+{
+  "user": {
+    "name": {
+      "name": "John Doe",
+      "location": "Manila, Philippines",
+      "age": 25,
+      "gender": "Male",
+      "title": "Graphic Designer & Guitar Enthusiast"
+    },
+    "skills": {
+      "offered": [
+        "Graphic Design",
+        "Photo Editing",
+        "Basic Video Editing"
+      ],
+      "learning": [
+        "Guitar",
+        "Public Speaking"
+      ]
+    },
+    "bio": {
+      "shortBio": "A creative designer passionate about visual storytelling and eager to learn new skills through collaboration and exchange.",
+      "experience": "3 years in digital design and branding"
+    },
+    "contacts": {
+      "email": "johndoe@example.com",
+      "number": "+63 912 345 6789",
+      "social": {
+        "facebook": "https://facebook.com/johndoe",
+        "instagram": "https://instagram.com/johndoe",
+        "linkedin": "https://linkedin.com/in/johndoe"
+      }
+    },
+    "profilePicture": {
+      "displaypicture": "path/to/display_picture.jpg",
+      "backgroundpic": "path/to/background_picture.jpg"
+    }
+  }
+}

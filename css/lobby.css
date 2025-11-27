@@ -12,32 +12,78 @@ body {
 
     header {
         grid-area: 1 / 1 / 2 / 3;
-    }
-    nav {
-        grid-area: 2 / 1;
-        height: calc(100vh - 10vh);
-        width: 10rem;
-        background: var(--primary-color);
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        #user_profile {
 
-        a {
-            font-size: 20px;
-            text-decoration: none;
-            color: black;
-            padding: 20px;
-        }
-        a:hover {
-            scale: 1.1;
-            border-bottom: 1px solid var(--secondary-color);
+            section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #user_img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    background-position: center;
+                    position: relative;
+                }
+                #user_name {
+                    font-size: 15px;
+                    color: var(--text-light);
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                }
+                button {
+                    border: none;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 100%;
+                    position: absolute;
+                    background-position: center;
+                    background-size: cover;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .dropdown {
+                background: var(--primary-color);
+                position: absolute;
+                height: 0;
+                width: 165px;
+                top: 10.5%;
+                right: .7%;
+                
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                border-radius: 10px;
+                z-index: 5;
+                transition: all .03s linear;
+
+                p {
+                    padding: 5px 20px;
+                    font-weight: 450;
+                    font-size: 15px;
+                    display: none;                    
+                }
+                p:hover {
+                    background-color: #fffdf794;
+                    filter: blur();
+                    border-radius: 5px;
+                }
+            }
+            .dropdownOpen {
+                height: 175px;
+                padding: 10px 0;
+
+                p {
+                    display: flex;
+                }
+            }
         }
     }
-    main {
-        grid-area: 2 / 2;
-        height: calc(100vh - 10vh);
+    .mainhtml {
         width: 100%;
         background: var(--background);
         display: grid;
@@ -66,6 +112,10 @@ body {
                     height: 75px;
                     width: 75px;
                     border-radius: 5px;
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.678);
+                }
+                button img {
+                    box-shadow: none;
                 }
                 h1 {
                     font-size: 20px;
@@ -92,7 +142,7 @@ body {
                     color: rgb(78, 78, 78);
                 }
             }
-            .profile_card:active {
+            .highlighted {
                 background: #dbdbdbc4;
                 border-left: 2px solid black;
             }
@@ -108,6 +158,7 @@ body {
             #preview_card {
                 #preview_profile {
                     position: relative;
+                    
 
                     .preview_profile_info {
                         position: absolute;
@@ -120,6 +171,7 @@ body {
                             width: 120px;
                             border-radius: 100%;
                             background-position: center;
+                            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.459);
                         }
                         #preview_name {
                             font-size: 28px;
@@ -131,10 +183,14 @@ body {
                             font-weight: 500;
                         }
                     }
-                    img {
+                    .userBG {
                         width: 100%;
                         height: 120px;
                         background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;  
+                        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.459);  
+                        filter: grayscale(20%) saturate(100%) contrast(-10%);                    
                     }
                 }
             }

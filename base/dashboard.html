@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/lobby.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <nav>
+        <section>
+            <h2>X<p>chango</p></h2>
+            <a href="/base/dashboard.html"><div><img src="https://cdn-icons-png.flaticon.com/128/16897/16897288.png" alt=""><p>Dashboard</p></div></a>
+            <a href="/base/lobby.html"><div><img src="https://cdn-icons-png.flaticon.com/128/883/883029.png" alt=""><p>Explore Skills</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/4267/4267500.png" alt=""><p>Sessions</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/15478/15478348.png" alt=""><p>Saved Profiles</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/2783/2783606.png" alt=""><p>Matches</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/2370/2370264.png" alt=""><p>Calendar</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/18072/18072071.png" alt=""><p>Progress Tracker</p></div></a>
+        </section>
+        <section>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/3524/3524636.png" alt=""><p>Settings</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/9208/9208320.png" alt=""><p>Logout</p></div></a>
+            <section id="user_info">
+                <div id="user_img" style="background-image: url(https://i.ytimg.com/vi/eOAEpMOo-pA/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAFAE_6IHaORSLhP0EDq7apQTceRA);"> <button id="user_btn"  style="background-image: url(https://cdn-icons-png.flaticon.com/128/10503/10503084.png);"></button></div>
+                <h1 id="user_name">Jerwin Ombajen</h1>
+            </section>
+        </section>
+    </nav>
+    <main class="dashboardhtml">
+        <div class="main board" style="grid-area: 1 / 1 / 2 / 3;">
+            <section>
+                <h1>Good Morning, Jerwin!</h1>
+                <p><strong>Update!</strong> <br>You got 10 friend request, 5 people want to exhange with your skills, 3 people messages you, and you have 5 pending session.</p>
+            </section> 
+            <img src="" alt="">
+        </div>
+        <div class="side" style="grid-area: 1 / 3 / 4 / 3;">
+            <div class="calendar board">
+                <div class="calendars">
+                    <div class="month-header">November 2025</div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days">
+                        <!-- Example days - these would be dynamically generated with JavaScript for a real calendar -->
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+                        <div class="day">19</div>
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="today">25</div> <!-- Assuming today is the 25th for this example -->
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle board"></div>
+            <div class="community board"></div>
+        </div>
+        <div class="sessions board">
+            <h1>Upcoming Session</h1>
+            <section id="session_container">
+                <div class="session-card">
+                    <div class="session-content">
+                        <div class="col">
+                            <p><span>Name:</span> Jerwin Ombajen</p>
+                            <p><span>Date:</span> January 4, 2026</p>
+                            <p><span>Time:</span> 1:00 PM</p>
+                        </div>
+
+                        <div class="col">
+                            <p><span>Skills:</span> Art → Dance</p>
+                            <p><span>Mode:</span> Online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="session-card">
+                    <div class="session-content">
+                        <div class="col">
+                            <p><span>Name:</span> Jerwin Ombajen</p>
+                            <p><span>Date:</span> January 4, 2026</p>
+                            <p><span>Time:</span> 1:00 PM</p>
+                        </div>
+
+                        <div class="col">
+                            <p><span>Skills:</span> Art → Dance</p>
+                            <p><span>Mode:</span> Online</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="progress board">
+            <h1>Progress Board</h1>
+            <section class="progress_container">
+                <div class="progress-item">
+                    <div class="info">
+                        <div class="left">
+                            <span class="icon">🎨</span>
+                            <div>
+                                <p class="name">Jerwin Ombajen</p>
+                                <p class="role">Artist</p>
+                            </div>
+                        </div>
+                        <p class="percent">50%</p>
+                    </div>
+                    <progress value="50" max="100"></progress>
+                </div>
+
+                <div class="progress-item">
+                    <div class="info">
+                        <div class="left">
+                            <span class="icon">🎨</span>
+                            <div>
+                                <p class="name">Jerwin Ombajen</p>
+                                <p class="role">Artist</p>
+                            </div>
+                        </div>
+                        <p class="percent">80%</p>
+                    </div>
+                    <progress value="50" max="100"></progress>
+                </div>
+
+                <div class="progress-item">
+                    <div class="info">
+                        <div class="left">
+                            <span class="icon">🎨</span>
+                            <div>
+                                <p class="name">Jerwin Ombajen</p>
+                                <p class="role">Artist</p>
+                            </div>
+                        </div>
+                        <p class="percent">30%</p>
+                    </div>            
+                    <progress value="50" max="100"></progress>
+                </div>
+            </section>
+            
+        </div>
+        <div class="activity board" style="grid-area: 3 / 1 / 3 / 3;">
+            <h2>Activity Log</h2>
+            <section class="activity_container">
+                <div class="notification">
+                    <img src="" alt="">
+                    <section>
+                        <div id="notif_details"><strong>Jerwin Ombajen</strong> want to be friends with you want to be friends with youwant to be friends with youwant to be friends with youwant to be friends with you.</div>
+                        <div id="notif_date">7d</div>
+                    </section>
+                    <div id="notifbtn"></div>
+                </div>
+                <div class="notification">
+                    <img src="" alt="">
+                    <section>
+                        <div id="notif_details"><strong>Jerwin Ombajen</strong> want to be friends with you.</div>
+                        <div id="notif_date">7d</div>
+                    </section>
+                    <div id="notifbtn"></div>
+                </div>
+                <div class="notification">
+                    <img src="" alt="">
+                    <section>
+                        <div id="notif_details"><strong>Jerwin Ombajen</strong> want to be friends with you.</div>
+                        <div id="notif_date">7d</div>
+                    </section>
+                    <div id="notifbtn"></div>
+                </div>
+                <div class="notification">
+                    <img src="" alt="">
+                    <section>
+                        <div id="notif_details"><strong>Jerwin Ombajen</strong>  want to be friends with you..</div>
+                        <div id="notif_date">7d</div>
+                    </section>
+                    <div id="notifbtn"></div>
+                </div>
+
+            </section>
+        </div>      
+    </main>
+    <div id="overlay"></div>
+</body>
+    <script src="/js/user.js"></script>
+    <script src="/js/userdata.js"></script>
+</html>
