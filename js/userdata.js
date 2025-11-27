@@ -29,6 +29,32 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/john1/300",
       backgroundpic: "https://picsum.photos/seed/johnbg1/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        {
+          id: "101-t1",
+          content: "Started working on a new poster design today. Feeling inspired!",
+          date: "2025-01-10"
+        },
+        {
+          id: "101-t2",
+          content: "Nothing beats a quiet night with my guitar and a cup of coffee.",
+          date: "2025-01-15"
+        },
+        {
+          id: "101-t3",
+          content: "Design isn't just about visuals—it’s about telling a story that connects.",
+          date: "2025-01-20"
+        }
+      ],
+      picturePosts: [
+        { id: "101-p1", image: "https://picsum.photos/seed/johnp1/800", caption: "New logo experiment!", date: "2025-01-12" },
+        { id: "101-p2", image: "https://picsum.photos/seed/johnp2/800", caption: "Practice sketch session.", date: "2025-01-18" },
+        { id: "101-p3", image: "https://picsum.photos/seed/johnp3/800", caption: "Sunset inspiration.", date: "2025-01-22" },
+        { id: "101-p4", image: "https://picsum.photos/seed/johnp4/800", caption: "Design mood board.", date: "2025-01-25" },
+        { id: "101-p5", image: "https://picsum.photos/seed/johnp5/800", caption: "Weekend vibes.", date: "2025-01-28" }
+      ]
     }
   },
 
@@ -62,6 +88,20 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/maria2/300",
       backgroundpic: "https://picsum.photos/seed/mariabg2/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        { id: "102-t1", content: "Wrote three articles today. Productivity feels good!", date: "2025-01-07" },
+        { id: "102-t2", content: "Trying watercolor painting this weekend—wish me luck!", date: "2025-01-14" },
+        { id: "102-t3", content: "Words are powerful. Use them with care.", date: "2025-01-18" }
+      ],
+      picturePosts: [
+        { id: "102-p1", image: "https://picsum.photos/seed/mariap1/800", caption: "Workspace setup.", date: "2025-01-09" },
+        { id: "102-p2", image: "https://picsum.photos/seed/mariap2/800", caption: "Writing drafts!", date: "2025-01-16" },
+        { id: "102-p3", image: "https://picsum.photos/seed/mariap3/800", caption: "New painting attempt.", date: "2025-01-21" },
+        { id: "102-p4", image: "https://picsum.photos/seed/mariap4/800", caption: "Morning coffee & thoughts.", date: "2025-01-23" },
+        { id: "102-p5", image: "https://picsum.photos/seed/mariap5/800", caption: "Sketching ideas.", date: "2025-01-27" }
+      ]
     }
   },
 
@@ -95,6 +135,20 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/mark3/300",
       backgroundpic: "https://picsum.photos/seed/markbg3/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        { id: "103-t1", content: "Just deployed a new project—feels awesome!", date: "2025-01-05" },
+        { id: "103-t2", content: "React hooks still amaze me.", date: "2025-01-11" },
+        { id: "103-t3", content: "Weekend jam session incoming!", date: "2025-01-22" }
+      ],
+      picturePosts: [
+        { id: "103-p1", image: "https://picsum.photos/seed/markp1/800", caption: "Coding setup today.", date: "2025-01-07" },
+        { id: "103-p2", image: "https://picsum.photos/seed/markp2/800", caption: "UI prototype sketch.", date: "2025-01-13" },
+        { id: "103-p3", image: "https://picsum.photos/seed/markp3/800", caption: "Drum practice!", date: "2025-01-17" },
+        { id: "103-p4", image: "https://picsum.photos/seed/markp4/800", caption: "Late-night coding grind.", date: "2025-01-24" },
+        { id: "103-p5", image: "https://picsum.photos/seed/markp5/800", caption: "Another UI draft done.", date: "2025-01-26" }
+      ]
     }
   },
 
@@ -128,6 +182,20 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/ella4/300",
       backgroundpic: "https://picsum.photos/seed/ellabg4/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        { id: "104-t1", content: "New cupcake recipe coming soon!", date: "2025-01-06" },
+        { id: "104-t2", content: "Photography practice is so relaxing.", date: "2025-01-12" },
+        { id: "104-t3", content: "Baking is love made edible.", date: "2025-01-16" }
+      ],
+      picturePosts: [
+        { id: "104-p1", image: "https://picsum.photos/seed/ellap1/800", caption: "Freshly baked goodies!", date: "2025-01-09" },
+        { id: "104-p2", image: "https://picsum.photos/seed/ellap2/800", caption: "Macro shot practice.", date: "2025-01-11" },
+        { id: "104-p3", image: "https://picsum.photos/seed/ellap3/800", caption: "Perfect pastries.", date: "2025-01-20" },
+        { id: "104-p4", image: "https://picsum.photos/seed/ellap4/800", caption: "Kitchen day!", date: "2025-01-23" },
+        { id: "104-p5", image: "https://picsum.photos/seed/ellap5/800", caption: "Photo practice #2", date: "2025-01-28" }
+      ]
     }
   },
 
@@ -161,6 +229,20 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/kevin5/300",
       backgroundpic: "https://picsum.photos/seed/kevinbg5/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        { id: "105-t1", content: "Another great training session today!", date: "2025-01-03" },
+        { id: "105-t2", content: "Learning JavaScript fundamentals—slow but steady!", date: "2025-01-16" },
+        { id: "105-t3", content: "Strength doesn't come from what you can do. It comes from overcoming things you once thought you couldn't.", date: "2025-01-18" }
+      ],
+      picturePosts: [
+        { id: "105-p1", image: "https://picsum.photos/seed/kevinp1/800", caption: "Gym grind.", date: "2025-01-06" },
+        { id: "105-p2", image: "https://picsum.photos/seed/kevinp2/800", caption: "Workout plan draft.", date: "2025-01-14" },
+        { id: "105-p3", image: "https://picsum.photos/seed/kevinp3/800", caption: "Afternoon jog.", date: "2025-01-22" },
+        { id: "105-p4", image: "https://picsum.photos/seed/kevinp4/800", caption: "Meal prep!", date: "2025-01-25" },
+        { id: "105-p5", image: "https://picsum.photos/seed/kevinp5/800", caption: "JS study time.", date: "2025-01-28" }
+      ]
     }
   },
 
@@ -194,12 +276,22 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/sofia6/300",
       backgroundpic: "https://picsum.photos/seed/sofiabg6/1200/400"
+    },
+    socialPosts: {
+      textPosts: [
+        { id: "106-t1", content: "Started a new illustration today!", date: "2025-01-04" },
+        { id: "106-t2", content: "Music practice has been fun lately.", date: "2025-01-10" },
+        { id: "106-t3", content: "Art is where the heart speaks.", date: "2025-01-21" }
+      ],
+      picturePosts: [
+        { id: "106-p1", image: "https://picsum.photos/seed/sofiap1/800", caption: "Digital art progress.", date: "2025-01-07" },
+        { id: "106-p2", image: "https://picsum.photos/seed/sofiap2/800", caption: "Color palette study.", date: "2025-01-15" },
+        { id: "106-p3", image: "https://picsum.photos/seed/sofiap3/800", caption: "Sketch dump!", date: "2025-01-19" },
+        { id: "106-p4", image: "https://picsum.photos/seed/sofiap4/800", caption: "Late-night doodles.", date: "2025-01-24" },
+        { id: "106-p5", image: "https://picsum.photos/seed/sofiap5/800", caption: "New character design!", date: "2025-01-28" }
+      ]
     }
   },
-
-  // -----------------------------
-  // 10 MORE USERS BELOW
-  // -----------------------------
 
   { 
     id: 107,
@@ -231,9 +323,38 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/adrian7/300",
       backgroundpic: "https://picsum.photos/seed/adrianbg7/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: "107-t1",
+      content: "Exploring new photo editing techniques today!",
+      date: "2025-01-04"
+    },
+    {
+      id: "107-t2",
+      content: "Sunset shoots never get old.",
+      date: "2025-01-11"
+    },
+    {
+      id: "107-t3",
+      content: "Traveling teaches perspective.",
+      date: "2025-01-20"
     }
-  },
+  ],
+  picturePosts: [
+    { id: "107-p1", image: "https://picsum.photos/seed/alexp1/800", caption: "Golden hour magic.", date: "2025-01-07" },
+    { id: "107-p2", image: "https://picsum.photos/seed/alexp2/800", caption: "City lights.", date: "2025-01-10" },
+    { id: "107-p3", image: "https://picsum.photos/seed/alexp3/800", caption: "Landscape capture.", date: "2025-01-15" },
+    { id: "107-p4", image: "https://picsum.photos/seed/alexp4/800", caption: "Behind the scenes.", date: "2025-01-22" },
+    { id: "107-p5", image: "https://picsum.photos/seed/alexp5/800", caption: "Color grading tests.", date: "2025-01-27" }
+  ]
+}
 
+  },
+]
+
+const Nusers = [
   { 
     id: 108,
     name: {
@@ -264,7 +385,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/bea8/300",
       backgroundpic: "https://picsum.photos/seed/beabg8/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: "108-t1",
+      content: "Trying new outfit combinations today!",
+      date: "2025-01-03"
+    },
+    {
+      id: "108-t2",
+      content: "Self-care Sunday hits different.",
+      date: "2025-01-11"
+    },
+    {
+      id: "108-t3",
+      content: "Confidence is the best accessory.",
+      date: "2025-01-19"
     }
+  ],
+  picturePosts: [
+    { id: "108-p1", image: "https://picsum.photos/seed/chloep1/800", caption: "Today’s outfit!", date: "2025-01-06" },
+    { id: "108-p2", image: "https://picsum.photos/seed/chloep2/800", caption: "Makeup test run.", date: "2025-01-13" },
+    { id: "108-p3", image: "https://picsum.photos/seed/chloep3/800", caption: "Chill day at home.", date: "2025-01-17" },
+    { id: "108-p4", image: "https://picsum.photos/seed/chloep4/800", caption: "Mirror selfie vibes.", date: "2025-01-23" },
+    { id: "108-p5", image: "https://picsum.photos/seed/chloep5/800", caption: "Wardrobe rearranged!", date: "2025-01-26" }
+  ]
+}
+
   },
 
   { 
@@ -297,7 +445,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/daniel9/300",
       backgroundpic: "https://picsum.photos/seed/danielbg9/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: "109-t1",
+      content: "Working on a small robotics project today!",
+      date: "2025-01-05"
+    },
+    {
+      id: "109-t2",
+      content: "Car engines are fascinating machines.",
+      date: "2025-01-12"
+    },
+    {
+      id: "109-t3",
+      content: "Prototype update coming soon.",
+      date: "2025-01-18"
     }
+  ],
+  picturePosts: [
+    { id: "109-p1", image: "https://picsum.photos/seed/liamp1/800", caption: "Testing circuits.", date: "2025-01-08" },
+    { id: "109-p2", image: "https://picsum.photos/seed/liamp2/800", caption: "Gear assembly.", date: "2025-01-14" },
+    { id: "109-p3", image: "https://picsum.photos/seed/liamp3/800", caption: "Engine close-up.", date: "2025-01-20" },
+    { id: "109-p4", image: "https://picsum.photos/seed/liamp4/800", caption: "Robot frame build.", date: "2025-01-24" },
+    { id: "109-p5", image: "https://picsum.photos/seed/liamp5/800", caption: "Workshop day.", date: "2025-01-28" }
+  ]
+}
+
   },
 
   { 
@@ -330,7 +505,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/hannah10/300",
       backgroundpic: "https://picsum.photos/seed/hannahbg10/1200/400"
-    }
+    },
+    socialPosts: {
+      textPosts: [
+        {
+          id: 1,
+          content: "Experimenting with new watercolor techniques today. It’s messy but fun!",
+          date: "2025-01-12"
+        },
+        {
+          id: 2,
+          content: "Walked around Burnham Park for inspiration. The scenery never fails me.",
+          date: "2025-02-03"
+        },
+        {
+          id: 3,
+          content: "Finally finished my first animation loop! Just 3 seconds but I’m proud.",
+          date: "2025-02-18"
+        }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/hannahp1/600/500", caption: "Soft pastel florals 🌸", date: "2025-01-20" },
+    { id: 2, image: "https://picsum.photos/seed/hannahp2/600/500", caption: "Afternoon sketching session.", date: "2025-01-28" },
+    { id: 3, image: "https://picsum.photos/seed/hannahp3/600/500", caption: "Trying new brushes!", date: "2025-02-04" },
+    { id: 4, image: "https://picsum.photos/seed/hannahp4/600/500", caption: "Landscape study in watercolor.", date: "2025-02-16" },
+    { id: 5, image: "https://picsum.photos/seed/hannahp5/600/500", caption: "My messy but cozy workspace 🎨", date: "2025-02-22" }
+  ]
+}
+
   },
 
   { 
@@ -363,7 +565,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/leon11/300",
       backgroundpic: "https://picsum.photos/seed/leonbg11/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Tried a new recipe today—garlic butter steak. Turned out amazing!",
+      date: "2025-01-08"
+    },
+    {
+      id: 2,
+      content: "Thinking of starting a small café someday. Dream big!",
+      date: "2025-01-25"
+    },
+    {
+      id: 3,
+      content: "Latte art practice is harder than it looks, but improving slowly.",
+      date: "2025-02-10"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/leonp1/600/500", caption: "Today’s special: creamy ramen 🍜", date: "2025-01-14" },
+    { id: 2, image: "https://picsum.photos/seed/leonp2/600/500", caption: "My kitchen setup!", date: "2025-01-20" },
+    { id: 3, image: "https://picsum.photos/seed/leonp3/600/500", caption: "Trying out latte art again ☕", date: "2025-01-30" },
+    { id: 4, image: "https://picsum.photos/seed/leonp4/600/500", caption: "Fresh ingredients make all the difference.", date: "2025-02-05" },
+    { id: 5, image: "https://picsum.photos/seed/leonp5/600/500", caption: "Experimenting with desserts!", date: "2025-02-18" }
+  ]
+}
+
   },
 
   { 
@@ -396,9 +625,39 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/trixie12/300",
       backgroundpic: "https://picsum.photos/seed/trixiebg12/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Finally learning how to position elements properly in HTML/CSS!",
+      date: "2025-01-03"
+    },
+    {
+      id: 2,
+      content: "Studying at a café today—super productive!",
+      date: "2025-01-22"
+    },
+    {
+      id: 3,
+      content: "JavaScript is confusing but interesting. Baby steps!",
+      date: "2025-02-14"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/trixiep1/600/500", caption: "Study notes for today 📚", date: "2025-01-10" },
+    { id: 2, image: "https://picsum.photos/seed/trixiep2/600/500", caption: "HTML practice page!", date: "2025-01-18" },
+    { id: 3, image: "https://picsum.photos/seed/trixiep3/600/500", caption: "My study workspace 💻", date: "2025-01-28" },
+    { id: 4, image: "https://picsum.photos/seed/trixiep4/600/500", caption: "Trying out CSS grid layouts.", date: "2025-02-06" },
+    { id: 5, image: "https://picsum.photos/seed/trixiep5/600/500", caption: "Coffee + coding = perfect combo ☕", date: "2025-02-19" }
+  ]
+}
+
   },
 
+]
+
+const Vusers = [
   { 
     id: 113,
     name: {
@@ -429,7 +688,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/jasper13/300",
       backgroundpic: "https://picsum.photos/seed/jasperbg13/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Back-to-back training sessions today! Feeling pumped.",
+      date: "2025-01-05"
+    },
+    {
+      id: 2,
+      content: "Nutrition is 80% of your progress—don’t forget your veggies!",
+      date: "2025-01-27"
+    },
+    {
+      id: 3,
+      content: "Trying to learn video editing so I can make fitness tutorials soon.",
+      date: "2025-02-15"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/jasperp1/600/500", caption: "Morning workout grind 💪", date: "2025-01-10" },
+    { id: 2, image: "https://picsum.photos/seed/jasperp2/600/500", caption: "Meal prep for the week!", date: "2025-01-17" },
+    { id: 3, image: "https://picsum.photos/seed/jasperp3/600/500", caption: "New gym setup!", date: "2025-01-29" },
+    { id: 4, image: "https://picsum.photos/seed/jasperp4/600/500", caption: "Form check on deadlifts.", date: "2025-02-07" },
+    { id: 5, image: "https://picsum.photos/seed/jasperp5/600/500", caption: "Healthy smoothie time.", date: "2025-02-20" }
+  ]
+}
+
   },
 
   { 
@@ -462,7 +748,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/grace14/300",
       backgroundpic: "https://picsum.photos/seed/gracebg14/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Started learning Japanese—hiragana is fun but tricky!",
+      date: "2025-01-04"
+    },
+    {
+      id: 2,
+      content: "Finished preparing tomorrow’s lesson plan. Hoping my students enjoy it.",
+      date: "2025-01-26"
+    },
+    {
+      id: 3,
+      content: "Trying my hand at creative writing again. It feels refreshing.",
+      date: "2025-02-12"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/gracep1/600/500", caption: "Today’s lesson plan 📒", date: "2025-01-12" },
+    { id: 2, image: "https://picsum.photos/seed/gracep2/600/500", caption: "Study session notes!", date: "2025-01-20" },
+    { id: 3, image: "https://picsum.photos/seed/gracep3/600/500", caption: "Trying new journaling styles.", date: "2025-01-31" },
+    { id: 4, image: "https://picsum.photos/seed/gracep4/600/500", caption: "A quiet morning for writing ☀️", date: "2025-02-09" },
+    { id: 5, image: "https://picsum.photos/seed/gracep5/600/500", caption: "Language learning progress!", date: "2025-02-21" }
+  ]
+}
+
   },
 
   { 
@@ -495,7 +808,34 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/theo15/300",
       backgroundpic: "https://picsum.photos/seed/theobg15/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Golden hour photoshoots are still my favorite.",
+      date: "2025-01-06"
+    },
+    {
+      id: 2,
+      content: "Learning guitar chords slowly but steadily!",
+      date: "2025-01-28"
+    },
+    {
+      id: 3,
+      content: "Trying to write my first song. Wish me luck!",
+      date: "2025-02-11"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/theop1/600/500", caption: "Sunset silhouette shot 🌅", date: "2025-01-15" },
+    { id: 2, image: "https://picsum.photos/seed/theop2/600/500", caption: "Behind-the-scenes shoot.", date: "2025-01-21" },
+    { id: 3, image: "https://picsum.photos/seed/theop3/600/500", caption: "New camera gear!", date: "2025-02-02" },
+    { id: 4, image: "https://picsum.photos/seed/theop4/600/500", caption: "Practice guitar session 🎸", date: "2025-02-08" },
+    { id: 5, image: "https://picsum.photos/seed/theop5/600/500", caption: "Trying out portrait lighting.", date: "2025-02-19" }
+  ]
+}
+
   },
 
   { 
@@ -528,6 +868,33 @@ const users = [
     profilePicture: {
       displaypicture: "https://picsum.photos/seed/luna16/300",
       backgroundpic: "https://picsum.photos/seed/lunabg16/1200/400"
+    },
+    socialPosts: {
+  textPosts: [
+    {
+      id: 1,
+      content: "Finished a handmade macramé keychain today!",
+      date: "2025-01-09"
+    },
+    {
+      id: 2,
+      content: "Started learning Python again. Loops are actually fun.",
+      date: "2025-01-23"
+    },
+    {
+      id: 3,
+      content: "Crafting helps me relax—coding challenges me. Perfect balance.",
+      date: "2025-02-13"
     }
+  ],
+  picturePosts: [
+    { id: 1, image: "https://picsum.photos/seed/lunap1/600/500", caption: "Handmade crafts of the week ✨", date: "2025-01-11" },
+    { id: 2, image: "https://picsum.photos/seed/lunap2/600/500", caption: "DIY workspace setup.", date: "2025-01-19" },
+    { id: 3, image: "https://picsum.photos/seed/lunap3/600/500", caption: "First Python script running!", date: "2025-01-29" },
+    { id: 4, image: "https://picsum.photos/seed/lunap4/600/500", caption: "Crafting materials haul 🧶", date: "2025-02-06" },
+    { id: 5, image: "https://picsum.photos/seed/lunap5/600/500", caption: "Finished another DIY project ❤️", date: "2025-02-18" }
+  ]
+}
+
   }
 ];

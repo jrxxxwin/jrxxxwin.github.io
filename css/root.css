@@ -43,7 +43,7 @@ nav {
             grid-template-columns: 40px 1fr;
             place-items: center;
             text-align: left;
-            gap: 10px;
+            gap: 5px;
             
             img {
                 height: 25px;
@@ -95,12 +95,13 @@ nav {
             position: relative;
         }
         #user_name {
-            font-size: 15px;
+            font-size: 16px;
             color: var(--text-light);
             font-weight: 400;
             align-self: center;
             display: none;
             width: 200px;
+            color: black;
         }
     }
 }

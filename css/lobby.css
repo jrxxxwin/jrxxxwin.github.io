@@ -71,7 +71,7 @@ body {
             }
             .highlighted {
                 background: #dbdbdbc4;
-                border-left: 2px solid black;
+                border-left: 4px solid var(--primary-color);
             }
         }
         .preview_container {

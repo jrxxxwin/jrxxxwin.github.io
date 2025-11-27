@@ -62,7 +62,7 @@ body {
 
             .month-header {
                 background-color: #f2f2f2;
-                padding: 2.5px;
+                padding: 5px;
                 text-align: center;
                 font-weight: bold;
                 border-radius: 20px;
@@ -70,12 +70,12 @@ body {
             .weekdays {
                 display: flex;
                 background-color: #e0e0e0;
-                padding: 2.5px 0;
+                padding: 5px 0;
 
                 div {
                     width: calc(100% / 7);
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 13px;
                 }
             }
             .days {
@@ -85,9 +85,9 @@ body {
             }
             .day {
                 text-align: center;
-                padding: 1px;
+                padding: 4px;
                 border: 1px solid #eee;
-                font-size: 14px;
+                font-size: 12px;
                 cursor: pointer;
             }
             .empty {
@@ -231,6 +231,8 @@ body {
     .activity {
         padding: 18px;
         overflow-y: hidden;
+        display: grid;
+        grid-template-rows: max-content 1fr;
 
         h2 {
             font-size: 20px;
@@ -244,20 +246,22 @@ body {
 
         }
         .notification {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: max-content 1fr;
             padding: 5px;
             position: relative;
             height: 70px;
             max-height: 70px;
             align-items: center;
 
-            img {
-                background: red;
+            .img {
                 height: 50px;
                 width: 50px;
                 align-self: center;
                 border-radius: 100%;
+                background-image: url(https://i.ytimg.com/vi/eOAEpMOo-pA/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAFAE_6IHaORSLhP0EDq7apQTceRA);
+                background-position: center;
+                background-size: cover;
             }
             section {
                 padding-left: 10px;

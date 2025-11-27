@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/lobby.css">
+    <link rel="stylesheet" href="/css/connections.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
     <nav>
@@ -28,13 +29,48 @@
             </section>
         </section>
     </nav>
-    <main class="mainhtml">
-        <div class="card_container" id="card_container"></div>
-        <div class="preview_container" id="preview_container">
-        </div>        
+    <main class="connectionsOver">
+        <div class="connections_header">
+            <div id="open_fr_panel"><img src="https://cdn-icons-png.flaticon.com/128/1500/1500455.png" alt=""></div>
+            <div id="open_rf_panel"><img src="https://cdn-icons-png.flaticon.com/128/3683/3683218.png" alt=""></div>
+            <div id="open_vr_panel"><img src="https://cdn-icons-png.flaticon.com/128/17492/17492582.png" alt=""></div>
+        </div>
+        <!-- Connection List -->
+        <div class="connections panel" id="connections" style="display: none;">
+            <div class="connections_number">
+                <h2>Connected</h2>
+                <p id="countNum">0</p>
+            </div>
+            <section id="connections_container">
+
+            </section> 
+        </div>
+        <!-- Request Connection List-->
+        <div class="connections panel" id="REconnections" style="display: none;">
+            <div class="connections_number">
+                <h2>Connections Request</h2>
+                <p id="countNums">0</p>
+            </div>
+            <section id="REconnections_container">
+            </section>  
+        </div>
+        <!-- View Profile -->
+        <div class="connections panel" id="VFconnections" style="display: none;">
+            <div class="connections_number">
+                <h2>People views</h2>
+                <p id="countNumss">0</p>
+            </div>
+            <section id="VIconnections_container">
+            </section>  
+        </div>
+
+        <div class="connections_previewC" id="connections_previewC"></div>
+        </div>
     </main>
+
     <div id="overlay"></div>
 </body>
-    <script src="/js/user.js"></script>
+    <script src="/js/connections.js"></script>
     <script src="/js/userdata.js"></script>
 </html>
+
