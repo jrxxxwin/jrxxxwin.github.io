@@ -30,9 +30,49 @@ html, body {
             top: 0;
             left: 0;
             width: 100%;
-
+            background: var(--primary-color);
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+            
+            h2 {
+                letter-spacing: 1px;
+            }
             h2:first-letter {
                 font-size: 2rem;
+                color: var(--secondary-color);
+            }
+            section {
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 18px;
+                    display: inline-block;
+                    transition: all .1s ease-in-out;
+                }
+                a:hover {
+                    color: var(--secondary-color);
+                    transform: translateY(-3px);
+                    scale: 1.09;
+                }
+            }
+            #login {
+                background: var(--secondary-color);
+                text-decoration: none;
+                color: black;
+                padding: 5px 10px;
+                border-radius: 30px;
+                font-size: 15px;
+            }
+            #login:hover {
+                background: var(--accent);
+                scale: 1.1;
             }
         }
         p {
