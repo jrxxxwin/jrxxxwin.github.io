@@ -336,6 +336,7 @@ body {
     }
 }
 .highlighted {
-                background: #dbdbdbc4;
-                border-left: 4px solid var(--primary-color);
-            }
+    background: #dbdbdbc4;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+}
