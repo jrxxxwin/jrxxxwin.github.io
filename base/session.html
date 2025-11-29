@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/lobby.css">    
+    <link rel="stylesheet" href="/css/session.css">
+</head>
+<body>
+    <nav>
+        <section>
+            <h2>X<p>chango</p></h2>
+            <a href="/base/dashboard.html"><div><img src="https://cdn-icons-png.flaticon.com/128/16897/16897288.png" alt=""><p>Dashboard</p></div></a>
+            <a href="/base/lobby.html"><div><img src="https://cdn-icons-png.flaticon.com/128/883/883029.png" alt=""><p>Explore Skills</p></div></a>
+            <a href="/base/session.html"><div><img src="https://cdn-icons-png.flaticon.com/128/4267/4267500.png" alt=""><p>Sessions</p></div></a>
+            <a href="/base/connections.html"><div><img src="https://cdn-icons-png.flaticon.com/128/15478/15478348.png" alt=""><p>Connections</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/2783/2783606.png" alt=""><p>Matches</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/2370/2370264.png" alt=""><p>Calendar</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/18072/18072071.png" alt=""><p>Progress Tracker</p></div></a>
+        </section>
+        <section>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/3524/3524636.png" alt=""><p>Settings</p></div></a>
+            <a href=""><div><img src="https://cdn-icons-png.flaticon.com/128/9208/9208320.png" alt=""><p>Logout</p></div></a>
+            <section id="user_info">
+                <div id="user_img" style="background-image: url(https://i.ytimg.com/vi/eOAEpMOo-pA/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAFAE_6IHaORSLhP0EDq7apQTceRA);"> <button id="user_btn"  style="background-image: url(https://cdn-icons-png.flaticon.com/128/10503/10503084.png);"></button></div>
+                <h1 id="user_name"></h1>
+            </section>
+        </section>
+    </nav>
+    <main class="sessionhtml">
+        <h1 class="section-title">Your Sessions</h1>
+        <div class="sessions-container">
+            <!-- Upcoming Session -->
+            <div class="session-card upcoming">
+                <h2>Upcoming Session</h2>
+                <p><strong>Skill:</strong> Graphic Design</p>
+                <p><strong>Partner:</strong> Alyssa M.</p>
+                <p><strong>Date:</strong> Nov 28, 2025</p>
+                <p><strong>Time:</strong> 3:00 PM</p>
+
+                <button class="btn-primary">View Details</button>
+            </div>
+
+            <!-- Active Session -->
+            <div class="session-card active">
+                <h2>Active Session</h2>
+                <p><strong>Skill:</strong> Front-End Coding</p>
+                <p><strong>Partner:</strong> John Reyes</p>
+                <p><strong>Status:</strong> In Progress</p>
+
+                <button class="btn-primary">Continue</button>
+            </div>
+
+            <!-- Completed Sessions -->
+            <div class="session-card completed">
+                <h2>Completed Sessions</h2>
+                <p><strong>Skill:</strong> Cooking Basics</p>
+                <p><strong>Partner:</strong> Carlo M.</p>
+                <p><strong>Finished:</strong> Nov 20, 2025</p>
+
+                <button class="btn-secondary">Review</button>
+            </div>
+
+            <div class="session-card upcoming">
+                <h2>Upcoming Session</h2>
+                <p><strong>Skill:</strong> Graphic Design</p>
+                <p><strong>Partner:</strong> Alyssa M.</p>
+                <p><strong>Date:</strong> Nov 28, 2025</p>
+                <p><strong>Time:</strong> 3:00 PM</p>
+
+                <button class="btn-primary">View Details</button>
+            </div>
+
+            <!-- Active Session -->
+            <div class="session-card active">
+                <h2>Active Session</h2>
+                <p><strong>Skill:</strong> Front-End Coding</p>
+                <p><strong>Partner:</strong> John Reyes</p>
+                <p><strong>Status:</strong> In Progress</p>
+
+                <button class="btn-primary">Continue</button>
+            </div>
+
+            <!-- Completed Sessions -->
+            <div class="session-card completed">
+                <h2>Completed Sessions</h2>
+                <p><strong>Skill:</strong> Cooking Basics</p>
+                <p><strong>Partner:</strong> Carlo M.</p>
+                <p><strong>Finished:</strong> Nov 20, 2025</p>
+
+                <button class="btn-secondary">Review</button>
+            </div>
+        </div>
+    </main>
+    <div id="overlay"></div>
+    <div class="connectionsOver" style="display: none;">
+        <div class="connections_header">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1500/1500455.png" alt=""></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3683/3683218.png" alt=""></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/17492/17492582.png" alt=""></a>
+        </div>
+        <!-- Connection List -->
+        <div class="connections panel">
+            <div class="connections_number">
+                <h2>Connections</h2>
+                <p>100</p>
+            </div>
+            <section id="connections_container">
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen </p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+                <div id="connections_card">
+                    <div id="connections_img"></div>
+                    <section>
+                        <p id="connections_name">Jerwin Ombajen</p>
+                        <p id="connections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+
+            </section>  
+        </div>
+        <!-- Request Connection List-->
+        <div class="connections panel">
+            <div class="connections_number">
+                <h2>Connections Request</h2>
+                <p>100</p>
+            </div>
+            <section id="REconnections_container">
+                <div id="REconnections_card">
+                    <div id="REconnections_img"></div>
+                    <section>
+                        <p id="REconnections_name">Jerwin Ombajen</p>
+                        <p id="REconnections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+            </section>  
+        </div>
+        <!-- View Profile -->
+        <div class="connections panel">
+            <div class="connections_number">
+                <h2>Connections Request</h2>
+                <p>100</p>
+            </div>
+            <section id="VIconnections_container">
+                <div id="VIconnections_card">
+                    <div id="REconnections_img"></div>
+                    <section>
+                        <p id="VIconnections_name">Jerwin Ombajen</p>
+                        <p id="VIconnections_X"><span>Artist</span> > <span>Cooking</span></p>
+                     
+                    </section>
+                    <div class="connections_btn"></div>
+                </div>
+            </section>  
+        </div>
+    </div>
+</body>
+    <script src="/js/user.js"></script>
+    <script src="/js/userdata.js"></script>
+    <script src="/js/dashboard.js"></script>
+</html>

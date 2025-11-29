@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <input type="text" class="userID" value="${id}" style="display: none;">
                     <section>
                         <p id="connections_name">${firstname} ${lastname}</p>
-                        <p id="connections_X"><span>${title}</span> > <span>Cooking</span></p>
+                        <p id="connections_X">${title}</p>
                     </section>
                     <div class="connections_btn"></div>
                 </div>
@@ -75,19 +75,17 @@ document.addEventListener('click', function() {
                     <div>
                     <div id="preview_about">
                         <div class="preview_actions">
-                            <div>Post</div>
-                            <div>Photos</div>
+                            <div onclick="poText()">Post</div>
+                            <div onclick="poText()">Photos</div>
                             <div>Vouch</div>
                         </div>
-                        <div class="user_post_container" id="user_post_container">
-                        </div>
+                        <div class="user_post_container" id="user_post_container"></div>
+                        <div class="user_photo_container" id="user_photo_container" style="display: none;"></div>
                     </div>  
                 </div>
             </div>`
         preview.innerHTML = html
-
-        const useradasdas = document.getElementById('user_post_container')
-
+        const asddf = document.getElementById('user_post_container')
         let userTextpost = userinfo.socialPosts.textPosts
         let etxtList = ''
         for (let i = 0; i < userTextpost.length; i++) {
@@ -109,38 +107,56 @@ document.addEventListener('click', function() {
             `
             etxtList += posthtml
         }
-        useradasdas.innerHTML = etxtList
-
+        asddf.innerHTML = etxtList
         //photos 
-        // const asddf = document.getElementById('user_post_container')
 
-        // let userPhotopost = userinfo.socialPosts.picturePosts
-        // let etxtasdList = ''
-        // for (let i = 0; i < userPhotopost.length; i++) {
-        //     let {image, caption, date} = userPhotopost[i]
+        const poasd = document.getElementById('user_photo_container')
 
-        //     let posthtml = `
-        //         <div class="user_post_card">
-        //             <div class="user_info">
-        //                 <img src="${userinfo.profilePicture.displaypicture}" alt="">
-        //                 <div class="name">${userinfo.name.firstname} ${userinfo.name.lastname} <br> <div class=postspan>${date}</div></div>
-        //             </div>
-        //             <div class="user_post"><p id="postText" onclick="asd()">${caption}</p><img src="${image}" alt=""></div>
-        //             <div class="user_interacions">
-        //                 <div><img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt=""></div>
-        //                 <div><img src="https://cdn-icons-png.flaticon.com/128/9256/9256383.png" alt=""></div>
-        //                 <div><img src="https://cdn-icons-png.flaticon.com/128/2099/2099085.png" alt=""></div>
-        //             </div>
-        //         </div>
-        //     `
-        //     etxtasdList += posthtml
-        // }
-        // useradasdas.innerHTML = etxtasdList
+        let sssss = userinfo.socialPosts.picturePosts
+        let kjl = ''
+        for (let i = 0; i < sssss.length; i++) {
+            let {image, caption, date} = sssss[i]
+
+            let posthtml = `
+                <div class="user_post_card">
+                    <div class="user_info">
+                        <img src="${userinfo.profilePicture.displaypicture}" alt="">
+                        <div class="name">${userinfo.name.firstname} ${userinfo.name.lastname} <br> <div class=postspan>${date}</div></div>
+                    </div>
+                    <div class="user_post"><p id="postText" onclick="asd()">${caption}</p><img src="${image}" alt=""></div>
+                    <div class="user_interacions">
+                        <div><img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt=""></div>
+                        <div><img src="https://cdn-icons-png.flaticon.com/128/9256/9256383.png" alt=""></div>
+                        <div><img src="https://cdn-icons-png.flaticon.com/128/2099/2099085.png" alt=""></div>
+                    </div>
+                </div>
+            `
+            kjl += posthtml
+        }
+            poasd.innerHTML = kjl;
     });
   });
 });
 
-//Open Friend
+
+let post = true
+function poText() { 
+    const con = document.getElementById('user_post_container')
+    const ca = document.getElementById('user_photo_container')
+
+    if (post == false) {
+        con.style.display = 'grid'
+        ca.style.display = 'none'
+        post = true
+    }
+    else if (post == true) {
+        con.style.display = 'none'
+        ca.style.display = 'grid'
+        post = false
+    }
+}
+    
+
 
 document.getElementById('open_fr_panel').addEventListener('click', function() {
     const c1 = document.getElementById('connections')
@@ -164,7 +180,7 @@ document.getElementById('open_fr_panel').addEventListener('click', function() {
                     <input type="text" class="userID" value="${id}" style="display: none;">
                     <section>
                         <p id="connections_name">${firstname} ${lastname}</p>
-                        <p id="connections_X"><span>${title}</span> > <span>Cooking</span></p>
+                        <p id="connections_X">${title}</p>
                     </section>
                     <div class="connections_btn"></div>
                 </div>
@@ -202,7 +218,7 @@ document.getElementById('open_rf_panel').addEventListener('click', function() {
                     <input type="text" class="userID" value="${id}" style="display: none;">
                     <section>
                         <p id="connections_name">${firstname} ${lastname}</p>
-                        <p id="connections_X"><span>${title}</span> > <span>Cooking</span></p>
+                        <p id="connections_X">${title}</p>
                     </section>
                     <div class="connections_btn"></div>
                 </div>
@@ -239,7 +255,7 @@ document.getElementById('open_vr_panel').addEventListener('click', function() {
                     <input type="text" class="userID" value="${id}" style="display: none;">
                     <section>
                         <p id="connections_name">${firstname} ${lastname}</p>
-                        <p id="connections_X"><span>${title}</span> > <span>Cooking</span></p>
+                        <p id="connections_X">${title}</p>
                     </section>
                     <div class="connections_btn"></div>
                 </div>

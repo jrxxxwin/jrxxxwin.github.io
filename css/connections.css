@@ -126,7 +126,9 @@ body {
     scrollbar-width: thin;
     scrollbar-color: rgba(189, 189, 189, 0.589) var(--background);
     
+    
     #preview_card {
+        
         #preview_profile {
             position: relative;
 
@@ -195,8 +197,9 @@ body {
                     border-radius: 20px;
                 }
             }
-            .user_post_container {
+            .user_post_container, .user_photo_container{
                 height: max-content;
+                display: grid;
                 
                 .user_post_card {
                     height: max-content;
@@ -206,6 +209,7 @@ body {
                     border-radius: 20px;
                     padding: 10px;
                     max-height: 600px;
+                    margin-bottom: 15px;
 
                     .user_info {
                         display: flex;
